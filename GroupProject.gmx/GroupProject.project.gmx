@@ -5,13 +5,19 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_flower</sprite>
+    <sprite>sprites\sprite2</sprite>
+  </sprites>
   <backgrounds name="background">
     <background>background\bg_tileSet</background>
   </backgrounds>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\obj_flower</object>
+  </objects>
   <rooms name="rooms">
-    <room>rooms\rm_game</room>
+    <room>rooms\rm_brick</room>
     <room>rooms\rm_menu</room>
   </rooms>
   <help>
