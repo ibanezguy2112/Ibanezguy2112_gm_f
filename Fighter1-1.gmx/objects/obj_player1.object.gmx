@@ -25,15 +25,70 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>selected = false;
+            <string>attack_time = 43
+is_attacking = false
+selected = false;
 Lx = x;
 Ly = y;
 cdirection = noone;
-image_speed = .25;
+image_speed = .40;
 right = spr_player1_right;
 left = spr_player1_left;
 idle_right = spr_player1_right_idle;
 idle_left = spr_player1_left_idle;
+attack_right = spr_player1_right_attack;
+attack_left = spr_player1_left_attack;
+obj = obj_player1
+rspeed = 3
+arrow_timing = 5;
+arrow_speed = 4
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_create(x,y,obj_arrow)
+show_debug_message(" alarm created obj_arrow")
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>is_attacking = false
 </string>
           </argument>
         </arguments>
@@ -56,15 +111,14 @@ idle_left = spr_player1_left_idle;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_check_direction)
-
-
-if ( x == global.destx &amp;&amp; y == global.desty ){
-//show_message("contact")
+            <string>if ( ! is_attacking == true){
+script_execute(scr_check_direction)
 }
 
+
+
 if(selected == true){
-move_towards_point(global.destx,global.desty,3)
+move_towards_point(global.destx,global.desty,rspeed)
 
 }
 
@@ -73,6 +127,28 @@ move_towards_point(global.destx,global.desty,3)
 if collision_circle(global.destx,global.desty,20,noone,true,false){
 //show_message("player_parent has come in contact with dest")
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///depth= y * -1;
+depth= y * -1;
 </string>
           </argument>
         </arguments>
@@ -104,6 +180,45 @@ if collision_circle(global.destx,global.desty,20,noone,true,false){
         </arguments>
       </action>
     </event>
+    <event eventtype="6" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>is_attacking = true;
+
+if (cdirection == "right"){
+sprite_index = attack_right
+
+}
+if(cdirection == "left"){
+sprite_index = attack_left
+}
+
+
+
+
+alarm[0] = attack_time
+show_debug_message("alarm 0 called")
+alarm[1] = arrow_timing
+show_debug_message("alarm 1 called") 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="6" enumb="4">
       <action>
         <libid>1</libid>
@@ -123,7 +238,7 @@ if collision_circle(global.destx,global.desty,20,noone,true,false){
             <kind>1</kind>
             <string>if(selected == false){
 selected = true
-global.selected = obj_player1
+global.selected = obj
 
 //show_message(" i am selected")
 }else{
@@ -154,7 +269,7 @@ selected = false
           <argument>
             <kind>1</kind>
             <string>if (selected == true){
-draw_sprite(spr_selected,0,x,y+10)
+//draw_sprite(spr_selected,0,x,y+10)
 
 }
 

@@ -3,9 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions>
-    <extension index="0">extensions\Simple Drop Down Menu</extension>
-  </NewExtensions>
+  <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="player1">
@@ -14,6 +12,7 @@
       <sprite>sprites\spr_player1_left_idle</sprite>
       <sprite>sprites\spr_player1_left</sprite>
       <sprite>sprites\spr_player1_right_attack</sprite>
+      <sprite>sprites\spr_player1_arrow</sprite>
       <sprite>sprites\spr_player1_left_attack</sprite>
       <sprite>sprites\spr_player1_death</sprite>
     </sprites>
@@ -26,11 +25,24 @@
       <sprite>sprites\spr_player2_right_idle</sprite>
       <sprite>sprites\spr_player2_left_idle</sprite>
     </sprites>
+    <sprites name="player3">
+      <sprite>sprites\spr_player3_right_attack</sprite>
+      <sprite>sprites\spr_player3_left_attack</sprite>
+      <sprite>sprites\spr_player3_right_idle</sprite>
+      <sprite>sprites\spr_player3_left_idle</sprite>
+      <sprite>sprites\spr_player3_death</sprite>
+      <sprite>sprites\spr_player3_right</sprite>
+      <sprite>sprites\spr_player3_left</sprite>
+    </sprites>
     <sprite>sprites\spr_click</sprite>
     <sprite>sprites\spr_selected</sprite>
     <sprite>sprites\spr_dot</sprite>
     <sprite>sprites\spr_dest</sprite>
     <sprite>sprites\spr_Cdest</sprite>
+    <sprites name="nature">
+      <sprite>sprites\spr_tree</sprite>
+      <sprite>sprites\spr_flower</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tile</background>
@@ -38,19 +50,38 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_check_direction.gml</script>
+    <scripts name="dropdown">
+      <script>scripts\add_dropdown_option.gml</script>
+    </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_popup</font>
+  </fonts>
   <objects name="objects">
     <objects name="player">
-      <object>objects\obj_player1</object>
-      <object>objects\obj_player2</object>
       <object>objects\obj_player_parent</object>
+      <objects name="player1">
+        <object>objects\obj_player1</object>
+        <object>objects\obj_arrow</object>
+      </objects>
+      <objects name="player2">
+        <object>objects\obj_player2</object>
+      </objects>
+      <objects name="player3">
+        <object>objects\obj_player3</object>
+      </objects>
     </objects>
-    <object>objects\obj_system</object>
+    <object>objects\obj_mouse_system</object>
     <object>objects\obj_dest</object>
     <object>objects\obj_mouse</object>
+    <objects name="nature">
+      <object>objects\obj_tree</object>
+      <object>objects\obj_flower</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Room_1</room>
+    <room>rooms\rm_Forest</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
