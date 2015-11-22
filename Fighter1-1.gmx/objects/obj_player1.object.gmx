@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>obj_player_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,23 +25,32 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>attack_time = 43
+            <string>//spawn_points
+x = obj_spawn.x
+y = obj_spawn.y
+
+//
+attack_time = 43
 is_attacking = false
 selected = false;
 Lx = x;
 Ly = y;
 cdirection = noone;
 image_speed = .40;
+//sprites
 right = spr_player1_right;
 left = spr_player1_left;
 idle_right = spr_player1_right_idle;
 idle_left = spr_player1_left_idle;
 attack_right = spr_player1_right_attack;
 attack_left = spr_player1_left_attack;
+death = spr_player1_death;
+death_time = ""
+health = 100;  
 obj = obj_player1
 rspeed = 3
 arrow_timing = 5;
-arrow_speed = 4
+arrow_speed = 7
 </string>
           </argument>
         </arguments>
@@ -154,6 +163,29 @@ depth= y * -1;
         </arguments>
       </action>
     </event>
+    <event eventtype="5" enumb="53">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>health = health - 5
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="5" enumb="13">
       <action>
         <libid>1</libid>
@@ -244,33 +276,6 @@ global.selected = obj
 }else{
 selected = false
 //show_message(" i am Not selected")
-}
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (selected == true){
-//draw_sprite(spr_selected,0,x,y+10)
-
 }
 
 </string>

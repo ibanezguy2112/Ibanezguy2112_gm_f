@@ -54,7 +54,9 @@
     <instance objName="obj_player1" x="96" y="192" name="inst_FD70FEC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mouse_system" x="32" y="32" name="inst_F4056ED1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player2" x="96" y="96" name="inst_E0D485A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player3" x="352" y="192" name="inst_6F688684" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player3" x="192" y="64" name="inst_6F688684" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_health_manager" x="64" y="32" name="inst_E613F42D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spawn" x="32" y="224" name="inst_CA25F53A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

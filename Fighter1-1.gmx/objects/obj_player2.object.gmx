@@ -32,12 +32,16 @@ Lx = x;
 Ly = y;
 cdirection = noone;
 image_speed = .25;
+//sprites
 right = spr_player2_right;
 left = spr_player2_left;
 idle_right = spr_player2_right_idle;
 idle_left = spr_player2_left_idle;
 attack_right = spr_player2_right_attack;
 attack_left = spr_player2_left_attack;
+death = spr_player2_death;
+death_time = ""
+health = 100; 
 obj = obj_player2
 rspeed = 3
 </string>

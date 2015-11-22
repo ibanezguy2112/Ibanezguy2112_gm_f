@@ -56,9 +56,11 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_popup</font>
+    <font>fonts\fnt_num</font>
   </fonts>
   <objects name="objects">
     <objects name="player">
+      <object>objects\obj_health_manager</object>
       <object>objects\obj_player_parent</object>
       <objects name="player1">
         <object>objects\obj_player1</object>
@@ -77,6 +79,9 @@
     <objects name="nature">
       <object>objects\obj_tree</object>
       <object>objects\obj_flower</object>
+    </objects>
+    <objects name="SPAWN_WARPS">
+      <object>objects\obj_spawn</object>
     </objects>
   </objects>
   <rooms name="rooms">

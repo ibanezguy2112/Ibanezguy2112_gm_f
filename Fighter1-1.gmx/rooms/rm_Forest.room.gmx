@@ -53,7 +53,6 @@
   <instances>
     <instance objName="obj_tree" x="32" y="896" name="inst_D2E5B36A" locked="0" code="" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree" x="64" y="864" name="inst_53E2E514" locked="0" code="" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player1" x="96" y="960" name="inst_9083483A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree" x="160" y="960" name="inst_82485C19" locked="0" code="" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree" x="192" y="928" name="inst_97580EE0" locked="0" code="" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree" x="64" y="64" name="inst_596D5C9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -96,6 +95,8 @@
     <instance objName="obj_flower" x="256" y="448" name="inst_9ABBD8AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_flower" x="336" y="416" name="inst_493393EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_flower" x="240" y="944" name="inst_D358FF2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_health_manager" x="16" y="0" name="inst_CD5BD1AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spawn" x="121" y="889" name="inst_D340B9DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_tile" x="96" y="32" w="32" h="32" xo="16" yo="528" id="10000003" name="inst_3A53F6D9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
