@@ -33,7 +33,7 @@ draw_set_color(c_black)
 draw_set_font(fnt_num)
 
 if (object_exists(p1)){
-draw_text(p1.x - 5,p1.y - 25,p1.health)
+draw_text(p1.x - 5,p1.y - 25, p1.health)
 }
 /*
 if (object_exists(p2)){

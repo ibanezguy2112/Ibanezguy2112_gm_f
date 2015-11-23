@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_theme</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="player1">
       <sprite>sprites\spr_player1_right</sprite>
@@ -34,15 +36,18 @@
       <sprite>sprites\spr_player3_right</sprite>
       <sprite>sprites\spr_player3_left</sprite>
     </sprites>
-    <sprite>sprites\spr_click</sprite>
-    <sprite>sprites\spr_selected</sprite>
-    <sprite>sprites\spr_dot</sprite>
-    <sprite>sprites\spr_dest</sprite>
-    <sprite>sprites\spr_Cdest</sprite>
     <sprites name="nature">
       <sprite>sprites\spr_tree</sprite>
       <sprite>sprites\spr_flower</sprite>
     </sprites>
+    <sprites name="movement">
+      <sprite>sprites\spr_dest</sprite>
+      <sprite>sprites\spr_Cdest</sprite>
+      <sprite>sprites\spr_click</sprite>
+      <sprite>sprites\spr_selected</sprite>
+      <sprite>sprites\spr_dot</sprite>
+    </sprites>
+    <sprite>sprites\spr_button_backdrop</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tile</background>
@@ -64,18 +69,18 @@
       <object>objects\obj_player_parent</object>
       <objects name="player1">
         <object>objects\obj_player1</object>
+        <object>objects\obj_player1_dummy</object>
         <object>objects\obj_arrow</object>
       </objects>
       <objects name="player2">
         <object>objects\obj_player2</object>
+        <object>objects\obj_player2_dummy</object>
       </objects>
       <objects name="player3">
         <object>objects\obj_player3</object>
+        <object>objects\obj_player3_dummy</object>
       </objects>
     </objects>
-    <object>objects\obj_mouse_system</object>
-    <object>objects\obj_dest</object>
-    <object>objects\obj_mouse</object>
     <objects name="nature">
       <object>objects\obj_tree</object>
       <object>objects\obj_flower</object>
@@ -83,9 +88,20 @@
     <objects name="SPAWN_WARPS">
       <object>objects\obj_spawn</object>
     </objects>
+    <objects name="systems">
+      <object>objects\obj_BS_system</object>
+      <object>objects\obj_dest</object>
+      <object>objects\obj_mouse</object>
+      <object>objects\obj_mouse_system</object>
+    </objects>
+    <objects name="lighting">
+      <object>objects\obj_light</object>
+      <object>objects\obj_bulb</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Room_1</room>
+    <room>rooms\rm_basic_menu</room>
     <room>rooms\rm_Forest</room>
   </rooms>
   <help>

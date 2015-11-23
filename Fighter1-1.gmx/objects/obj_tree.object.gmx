@@ -48,7 +48,7 @@ depth= y * -1;
           <argument>
             <kind>1</kind>
             <string>///amimation timer
-image_speed = 0.08 +random(0.03);
+image_speed = 0.04 +random(0.03);
 image_index = random(5);
 //image_index = 0
 </string>
