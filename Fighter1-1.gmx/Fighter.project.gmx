@@ -3,7 +3,9 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Button Pack 2</extension>
+  </NewExtensions>
   <sounds name="sound">
     <sound>sound\snd_theme</sound>
   </sounds>
@@ -48,6 +50,107 @@
       <sprite>sprites\spr_dot</sprite>
     </sprites>
     <sprite>sprites\spr_button_backdrop</sprite>
+    <sprites name="buttions">
+      <sprite>sprites\spr_1player</sprite>
+      <sprite>sprites\spr_2player</sprite>
+      <sprite>sprites\spr_audio</sprite>
+      <sprite>sprites\spr_campaign</sprite>
+      <sprite>sprites\spr_buy</sprite>
+      <sprite>sprites\spr_continue</sprite>
+      <sprite>sprites\spr_createparty</sprite>
+      <sprite>sprites\spr_controls</sprite>
+      <sprite>sprites\spr_bestscore</sprite>
+      <sprite>sprites\spr_contactus</sprite>
+      <sprite>sprites\spr_customgame</sprite>
+      <sprite>sprites\spr_deletegame</sprite>
+      <sprite>sprites\spr_back</sprite>
+      <sprite>sprites\spr_credits</sprite>
+      <sprite>sprites\spr_easy</sprite>
+      <sprite>sprites\spr_download</sprite>
+      <sprite>sprites\spr_enable</sprite>
+      <sprite>sprites\spr_exit</sprite>
+      <sprite>sprites\spr_disable</sprite>
+      <sprite>sprites\spr_acheivments</sprite>
+      <sprite>sprites\spr_gameoptions</sprite>
+      <sprite>sprites\spr_export</sprite>
+      <sprite>sprites\spr_hard</sprite>
+      <sprite>sprites\spr_general</sprite>
+      <sprite>sprites\spr_highscore</sprite>
+      <sprite>sprites\spr_import</sprite>
+      <sprite>sprites\spr_help</sprite>
+      <sprite>sprites\spr_graphics</sprite>
+      <sprite>sprites\spr_facebook</sprite>
+      <sprite>sprites\spr_insane</sprite>
+      <sprite>sprites\spr_joinparty</sprite>
+      <sprite>sprites\spr_keybindings</sprite>
+      <sprite>sprites\spr_forward</sprite>
+      <sprite>sprites\spr_leaderboard</sprite>
+      <sprite>sprites\spr_instagram</sprite>
+      <sprite>sprites\spr_leaveparty</sprite>
+      <sprite>sprites\spr_load</sprite>
+      <sprite>sprites\spr_loadgame</sprite>
+      <sprite>sprites\spr_mainmenu</sprite>
+      <sprite>sprites\spr_login</sprite>
+      <sprite>sprites\spr_menu</sprite>
+      <sprite>sprites\spr_medium</sprite>
+      <sprite>sprites\spr_logout</sprite>
+      <sprite>sprites\spr_mods</sprite>
+      <sprite>sprites\spr_multiplayer</sprite>
+      <sprite>sprites\spr_moregames</sprite>
+      <sprite>sprites\spr_musicon</sprite>
+      <sprite>sprites\spr_next</sprite>
+      <sprite>sprites\spr_newgame</sprite>
+      <sprite>sprites\spr_options</sprite>
+      <sprite>sprites\spr_musicoff</sprite>
+      <sprite>sprites\spr_information</sprite>
+      <sprite>sprites\spr_other</sprite>
+      <sprite>sprites\spr_overview</sprite>
+      <sprite>sprites\spr_play</sprite>
+      <sprite>sprites\spr_no</sprite>
+      <sprite>sprites\spr_playgame</sprite>
+      <sprite>sprites\spr_quit</sprite>
+      <sprite>sprites\spr_quickplay</sprite>
+      <sprite>sprites\spr_playagain</sprite>
+      <sprite>sprites\spr_pause</sprite>
+      <sprite>sprites\spr_rankedgame</sprite>
+      <sprite>sprites\spr_removeads</sprite>
+      <sprite>sprites\spr_quitlevel</sprite>
+      <sprite>sprites\spr_redo</sprite>
+      <sprite>sprites\spr_report</sprite>
+      <sprite>sprites\spr_profile</sprite>
+      <sprite>sprites\spr_restartgame</sprite>
+      <sprite>sprites\spr_quitgame</sprite>
+      <sprite>sprites\spr_restart</sprite>
+      <sprite>sprites\spr_scoreboard</sprite>
+      <sprite>sprites\spr_select</sprite>
+      <sprite>sprites\spr_score</sprite>
+      <sprite>sprites\spr_resume</sprite>
+      <sprite>sprites\spr_return</sprite>
+      <sprite>sprites\spr_sell</sprite>
+      <sprite>sprites\spr_save</sprite>
+      <sprite>sprites\spr_sfx</sprite>
+      <sprite>sprites\spr_savegame</sprite>
+      <sprite>sprites\spr_soundeffects</sprite>
+      <sprite>sprites\spr_social</sprite>
+      <sprite>sprites\spr_about</sprite>
+      <sprite>sprites\spr_soundoptions</sprite>
+      <sprite>sprites\spr_singleplayer</sprite>
+      <sprite>sprites\spr_start</sprite>
+      <sprite>sprites\spr_store</sprite>
+      <sprite>sprites\spr_submitscore</sprite>
+      <sprite>sprites\spr_system</sprite>
+      <sprite>sprites\spr_language</sprite>
+      <sprite>sprites\spr_stop</sprite>
+      <sprite>sprites\spr_tutorial</sprite>
+      <sprite>sprites\spr_videooptions</sprite>
+      <sprite>sprites\spr_trophies</sprite>
+      <sprite>sprites\spr_undo</sprite>
+      <sprite>sprites\spr_twitter</sprite>
+      <sprite>sprites\spr_tumblr</sprite>
+      <sprite>sprites\spr_yes</sprite>
+      <sprite>sprites\spr_youtube</sprite>
+      <sprite>sprites\spr_setting</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tile</background>
@@ -98,10 +201,15 @@
       <object>objects\obj_light</object>
       <object>objects\obj_bulb</object>
     </objects>
+    <objects name="buttion">
+      <object>objects\obj_play_game</object>
+      <object>objects\obj_quit</object>
+      <object>objects\obj_buttion_parent</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_Room_1</room>
     <room>rooms\rm_basic_menu</room>
+    <room>rooms\rm_Room_1</room>
     <room>rooms\rm_Forest</room>
   </rooms>
   <help>
