@@ -14,6 +14,7 @@
       <sprite>sprites\spr_player1_right</sprite>
       <sprite>sprites\spr_player1_right_idle</sprite>
       <sprite>sprites\spr_player1_left_idle</sprite>
+      <sprite>sprites\spr_player1_selected</sprite>
       <sprite>sprites\spr_player1_left</sprite>
       <sprite>sprites\spr_player1_right_attack</sprite>
       <sprite>sprites\spr_player1_arrow</sprite>
@@ -151,6 +152,9 @@
       <sprite>sprites\spr_youtube</sprite>
       <sprite>sprites\spr_setting</sprite>
     </sprites>
+    <sprites name="backdrop">
+      <sprite>sprites\spr_backdrop</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tile</background>
@@ -205,7 +209,10 @@
       <object>objects\obj_play_game</object>
       <object>objects\obj_quit</object>
       <object>objects\obj_buttion_parent</object>
+      <object>objects\obj_menu_button</object>
     </objects>
+    <object>objects\obj_backdrop</object>
+    <object>objects\obj_backdrop_selected</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_basic_menu</room>

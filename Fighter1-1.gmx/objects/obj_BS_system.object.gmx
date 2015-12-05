@@ -26,7 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>//sound
+
+if(!audio_is_playing(snd_theme)){
 audio_play_sound(snd_theme,1,1)
+}
 </string>
           </argument>
         </arguments>
@@ -49,8 +52,8 @@ audio_play_sound(snd_theme,1,1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_navy)
-draw_rectangle(view_xview,view_yview + 360,view_xview + 512, view_yview + 384,false)
+            <string>//draw_set_color(c_white)
+//draw_rectangle(view_xview,view_yview + 300,view_xview + 512, view_yview + 384,false)
 </string>
           </argument>
         </arguments>

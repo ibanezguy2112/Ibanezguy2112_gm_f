@@ -47,10 +47,12 @@ attack_left = spr_player1_left_attack;
 death = spr_player1_death;
 death_time = ""
 health = 100;  
-obj = obj_player1
+
 rspeed = 3
-
-
+//selected
+obj = "obj_player1"
+selected_txt = "Player 1"
+selected_spr = spr_player1_selected
 //weapon vars
 arrow_range = 100;
 arrow_timing = 5;
@@ -276,12 +278,16 @@ show_debug_message("alarm 1 called")
 selected = true
 global.selected = obj
 
-//show_message(" i am selected")
+show_message(" i am selected")
 }else{
 selected = false
 //show_message(" i am Not selected")
 }
 
+
+//if(!global.selected == obj){
+//selected = false;
+//}
 </string>
           </argument>
         </arguments>

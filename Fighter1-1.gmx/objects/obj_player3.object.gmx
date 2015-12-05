@@ -42,7 +42,7 @@ attack_left = spr_player3_left_attack;
 death = spr_player3_death;
 death_time = ""
 health = 100; 
-obj = obj_player3
+obj = "obj_player3"
 rspeed = 3
 </string>
           </argument>
@@ -214,12 +214,16 @@ alarm[0] = attack_time
 selected = true
 global.selected = obj
 
-//show_message(" i am selected")
+show_message(" i am selected")
 }else{
 selected = false
-//show_message(" i am Not selected")
+show_message(" i am Not selected")
 }
 
+
+//if(!global.selected == obj){
+//selected = false;
+//}
 </string>
           </argument>
         </arguments>

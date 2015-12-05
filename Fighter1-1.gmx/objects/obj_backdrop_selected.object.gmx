@@ -4,11 +4,11 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="8" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,30 +25,33 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(room == rm_Forest){
-p1 = obj_player1
-p2 = obj_player2
-p3 = obj_player3
+            <string>switch(global.selected){
 
-draw_set_color(c_black)
-draw_set_font(fnt_num)
+case "obj_player1":
 
-if (object_exists(p1)){
-draw_text(p1.x - 5,p1.y - 25, p1.health)
-}else{}
+txt = obj_player1.selected_txt 
+spr = obj_player1.selected_spr   
+         break;
 
+case "obj_player2":
 
+    
+    break;
+    
+case "obj_player3":
 
-/*
-if (object_exists(p2)){
-draw_text(p2.x,p2.y,p2.health)
-}
-if (object_exists(p3)){
-draw_text(p3.x,p3.y,p3.health)
-}
-*/
+    break;
 
+case "obj_player4":
 
+    break;
+
+case "obj_player5":
+
+    break;
+case "obj_player6":
+
+    break;
 }
 </string>
           </argument>
