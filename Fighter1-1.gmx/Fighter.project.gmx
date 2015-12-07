@@ -200,6 +200,7 @@
       <object>objects\obj_dest</object>
       <object>objects\obj_mouse</object>
       <object>objects\obj_mouse_system</object>
+      <object>objects\obj_start_up_system</object>
     </objects>
     <objects name="lighting">
       <object>objects\obj_light</object>
@@ -215,6 +216,7 @@
     <object>objects\obj_backdrop_selected</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_start_up</room>
     <room>rooms\rm_basic_menu</room>
     <room>rooms\rm_Room_1</room>
     <room>rooms\rm_Forest</room>
