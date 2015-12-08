@@ -25,6 +25,7 @@ if(cdirection =="left"){
 sprite_index = idle_left;
 
 }
+
 }
 
  Lx = x;
