@@ -1,0 +1,6 @@
+possiable idea
+
+name:
+description :
+priorty :
+who should do it: 
