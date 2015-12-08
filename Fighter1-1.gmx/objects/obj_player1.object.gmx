@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//spawn_points
+            <string>
+
+//spawn_points
 x = obj_spawn.x
 y = obj_spawn.y
 
