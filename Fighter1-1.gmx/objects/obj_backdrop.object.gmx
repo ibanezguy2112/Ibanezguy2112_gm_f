@@ -30,7 +30,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -47,8 +47,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = view_xview
-y = view_yview + 288
+            <string>draw_sprite(spr_backdrop,-1,view_xview,view_yview + 288)
+
+
 </string>
           </argument>
         </arguments>

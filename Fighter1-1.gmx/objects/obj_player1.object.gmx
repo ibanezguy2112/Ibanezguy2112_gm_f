@@ -278,7 +278,7 @@ show_debug_message("alarm 1 called")
 selected = true
 global.selected = obj
 
-show_message(" i am selected")
+//show_message(" i am selected")
 }else{
 selected = false
 //show_message(" i am Not selected")
